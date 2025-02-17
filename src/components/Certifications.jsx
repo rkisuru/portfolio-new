@@ -19,19 +19,19 @@ const Certifications = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: index * 0.5 }}
           key={index}
-          className="mb-2 p-10 flex items-center gap-2"
+          className="p-10"
         >
           <a
             href={cert.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text:xl md:text-2xl font-semibold"
+            className="text:xl md:text-2xl font-semibold flex items-center gap-2"
           >
             {cert.title}
+            <span className="text-xl md:text-xl">
+              <MdArrowOutward />
+            </span>
           </a>
-          <span className="text-xl md:text-xl">
-            <MdArrowOutward />
-          </span>
         </motion.div>
       ))}
     </section>

@@ -32,10 +32,10 @@ const Navbar = () => {
       <nav className="fixed left-0 right-0 top-4 z-50">
         {/* Desktop Menu */}
         <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/20 py-3 backdrop-blur-lg lg:flex">
-          <div className="flex items-center justify-between gap-6">
+          <div className="flex items-center justify-between gap-12">
             <div>
               <a href="#">
-                <img src={logo} alt="logo" className="w-[150px]" />
+                <img src={logo} alt="logo" className="h-[30px]" />
               </a>
             </div>
             <div>
@@ -56,11 +56,11 @@ const Navbar = () => {
           </div>
         </div>
         {/* Mobile Menu */}
-        <div className="rounded-lg backdrop-blur-md lg:hidden">
+        <div className="rounded-lg backdrop-blur-md lg:hidden sm:mx-auto max-w-xl mx-4">
           <div className="flex items-center justify-between">
             <div>
               <a href="#">
-                <img src={logo} alt="logo" className="w-[90px] m-2" />
+                <img src={logo} alt="logo" className="w-[60px] m-2" />
               </a>
             </div>
             <div className="flex items-center">

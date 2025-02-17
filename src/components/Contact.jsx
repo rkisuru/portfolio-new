@@ -69,7 +69,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="p-4 lg:3/4" id="contact">
+    <div className="p-4 lg:w-3/4" id="contact">
       <Toaster />
       <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
         Let's Connect
@@ -80,7 +80,7 @@ const Contact = () => {
         transition={{ duration: 0.8, delay: 0.7 }}
         onSubmit={handleSubmit}
       >
-        <div className="mb-4 flex space-x-4">
+        <div className="mb-6 flex space-x-4">
           <div className="lg:w-1/2">
             <input
               type="text"
@@ -89,7 +89,7 @@ const Contact = () => {
               value={formData.name}
               placeholder="Enter your name"
               onChange={handleChange}
-              className="mb-8 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
+              className="mb-4 w-full appearance-none rounded-lg border border-stone-50/30 bg-transparent px-3 py-2 text-sm focus:border-stone-400 focus:outline-none"
             />
             {errors.name && (
               <motion.p

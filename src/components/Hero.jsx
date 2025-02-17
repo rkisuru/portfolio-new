@@ -19,6 +19,7 @@ const Hero = () => {
           {HERO.greet}
         </p>
         <p className="mb-8 p-2 text-xl">{HERO.description}</p>
+        <p className="p-2 text-lg tracking-tighter">{HERO.motto}</p>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}

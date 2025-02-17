@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo1 from "../assets/logo1.png";
 import { SOCIAL_MEDIA_LINKS } from "../constants";
 import { motion } from "framer-motion";
 
@@ -10,8 +10,8 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
-          src={logo}
-          className="w-[200px] my-20"
+          src={logo1}
+          className="w-[300px] my-10"
         />
       </div>
       <div className="flex items-center justify-center gap-8">
