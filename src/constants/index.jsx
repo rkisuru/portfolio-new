@@ -1,4 +1,11 @@
-import { FaGithub, FaLinkedin, FaFacebook, FaDiscord } from "react-icons/fa6";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaDiscord,
+  FaAngular,
+  FaDocker,
+} from "react-icons/fa6";
 
 import brc from "../assets/book.jpg";
 import tensor from "../assets/tensor.jpg";
@@ -10,11 +17,14 @@ import news from "../assets/news.jpg";
 import ecommerce from "../assets/ecommerce.jpg";
 
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
+import { TbBrandAngular, TbBrandNextjs } from "react-icons/tb";
+import { SiAngular, SiMongodb, SiSpring, SiSpringboot } from "react-icons/si";
+import { DiDocker, DiMysql, DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoSpringBoot } from "react-icons/bi";
+import { GiSpring } from "react-icons/gi";
+import { PiAngularLogo } from "react-icons/pi";
+import { LiaAngular } from "react-icons/lia";
 
 export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
@@ -108,34 +118,44 @@ export const BIO = [
 
 export const SKILLS = [
   {
+    icon: <SiSpringboot className="text-4xl text-white lg:text-5xl" />,
+    name: "Spring Boot",
+    experience: "1+ years",
+  },
+  {
     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
     name: "React",
-    experience: "2+ years",
+    experience: "1+ years",
   },
   {
-    icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-    name: "Next.js",
-    experience: "1+ year",
-  },
-  {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "MongoDB",
-    experience: "1.5+ years",
-  },
-  {
-    icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-    name: "Redis",
-    experience: "1+ year",
-  },
-  {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Node.js",
+    icon: <DiMysql className="text-4xl text-red-600 lg:text-5xl" />,
+    name: "MySQL",
     experience: "2+ years",
   },
   {
     icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
     name: "PostgreSQL",
-    experience: "1+ year",
+    experience: "1+ years",
+  },
+  {
+    icon: <FaAngular className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "Angular",
+    experience: "1+ years",
+  },
+  {
+    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "Node.js",
+    experience: "1+ years",
+  },
+  {
+    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "MongoDB",
+    experience: "1+ years",
+  },
+  {
+    icon: <FaDocker className="text-4xl text-sky-700 lg:text-5xl" />,
+    name: "Docker",
+    experience: "1+ years",
   },
 ];
 
